@@ -339,7 +339,7 @@ input:focus, textarea:focus {
 
 .project-item {
 	width: 900px;
-	text-align:left;
+	text-align:center;
 	color: #0493bd;
 	font-size: 24px;
 	margin: auto;
