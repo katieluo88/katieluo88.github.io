@@ -1,181 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Katie Luo</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <div class="brand">Katie Luo</div>
-    <div class="address-bar">2700 Hearst Avenue | Berkeley, CA 94720 | 408.768.0119</div>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Business Casual</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<html>
+    <head>
+        <title>WDD Homework 8</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script>
+        <script src = "assets/js/script.js"></script>
+    </head>
+    <body>
+        <!-- Sidebar Hamburger Icon -->
+        <div id = "sidebar-button">
+            <a id="nav-toggle">
+                <span></span>
+            </a>
         </div>
-        <!-- /.container -->
-    </nav>
 
-    <div class="container">
+        <!-- Sidebar -->
+        <nav class = "sidebar-container">
+            <!-- Question 1: Sidebar Code Here -->
+            <ul>
+              <li class = "sidebar-item">Home</li>
+              <li class = "sidebar-item">Name</li>
+              <li class = "sidebar-item">Major</li>
+              <li class = "sidebar-item">Fact</li>
+            </ul>
+            <!-- End Question 1 Here (Use as many lines as needed, but don't add code below this point)-->
+        </nav>
 
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12 text-center">
-                    <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
+        <!-- Page Wrapper, Consisting of All the Sections -->
+        <div class = "page-wrapper">
+            <!-- Carousel Section -->
+            <section class = "section" id = "carousel-section">
+                <div class = "carousel-container">
+                <!-- Question 2: Carousel Code Here -->
+                    <div id = "carousel">
+                        <div class = "carousel-item">
+                            <div class = "quote">"We keep moving forward, opening new doors, and doing new things, because we're curious and curiosity keeps leading us down new paths."
+                              <div class = "author">Walt Disney</div>
                             </div>
                         </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
+                        <div class = "carousel-item">
+                            <div class = "quote">"Accept the challenges so that you can feel the exhilaration of victory."
+                              <div class = "author">George S. Patton</div>
+                            </div>
+                        </div>
+                        <div class = "carousel-item">
+                            <div class = "quote">"Keep your eyes on the stars, and your feet on the ground."
+                              <div class = "author">Theodore Roosevelt</div>
+                            </div>
+                        </div>
+                        <div class = "carousel-item">
+                            <div class = "quote">"The secret of getting ahead is getting started."
+                              <div class = "author">Mark Twain</div>
+                            </div>
+                        </div>
+                        <div class = "carousel-item">
+                            <div class = "quote">"Failure will never overtake me if my determination to succeed is strong enough"
+                              <div class = "author">Og Mandino</div>
+                            </div>
+                        </div>
                     </div>
-                    <h2 class="brand-before">
-                        <small>Nice to meet you</small>
-                    </h2>
-                    <h1 class="brand-name">Scientist | Engineer | Dreamer</h1>
-                    <hr class="tagline-divider">
-                    <h2>
-                        <small>By
-                            <strong>Start Bootstrap</strong>
-                        </small>
-                    </h2>
+                <!-- End Question 2 Here (Use as many lines as needed, but don't add code below this point)-->
+                    <div id="carousel-prev">
+                        <img class="img-scaled" src="assets/img/arrowleft.png" />
+                    </div>
+                    <div id="carousel-next">
+                        <img class="img-scaled" src="assets/img/arrowright.png" />
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Build a website
-                        <strong>worth visiting</strong>
-                    </h2>
-                    <hr>
-                    <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
-                    <hr class="visible-xs">
-                    <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
-                    <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </section>
+            <!-- Name Section -->
+            <section class = "section" id = "name-section">
+                <div class = "text" id = "name-text">
+                    I am a potato cat
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Beautiful boxes
-                        <strong>to showcase your content</strong>
-                    </h2>
-                    <hr>
-                    <p>Use as many boxes as you like, and put anything you want in them! They are great for just about anything, the sky's the limit!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </section>
+            <!-- Major Section -->
+            <section class = "section" id = "major-section">
+                <div class = "text" id = "major-text">
+                    I am majoring in becoming a carrot
                 </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>&copy; 2015, created by Katie Luo using Bootstrap</p>
+            </section>
+            <!-- Random Fact Section -->
+            <section class = "section" id = "fact-section">
+                <div class = "text" id = "fact-text">
+                    Eating food and sleeping is a fun thing to do.
                 </div>
-            </div>
+            </section>
         </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
-
-</body>
-
+    </body>
 </html>
