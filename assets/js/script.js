@@ -17,7 +17,7 @@ $(document).ready(function() {
         $('#navbar').css('padding-top', 0);
         $('#navbar').css('margin-top', 0);
         $('#header-wrapper').css('height', 100);
-      }, 350);
+      }, 50);
 		} else {
       setTimeout(function(){
   			$('#header-wrapper').removeClass('header-active');
@@ -34,7 +34,7 @@ $(document).ready(function() {
         $('#navbar').css('padding-top', 100);
         $('#navbar').css('margin-top', 50);
         $('#header-wrapper').css('height', 300);
-      }, 350);
+      }, 50);
 		}
 	});
 
