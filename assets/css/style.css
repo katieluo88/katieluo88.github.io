@@ -19,8 +19,8 @@ a {
 	clear: both;
 }
 
-.page-wrapper {
-	height: 100%;
+#page-wrapper {
+	min-height: 100%;
 	width: 100%;
 	-webkit-transition: all .3s;
 	-moz-transition: all .3s;
@@ -113,6 +113,7 @@ a {
 	-moz-transition: all .3s;
 	-o-transition: all .3s;
 	transition: all .3s;
+	cursor: pointer;
 }
 
 .navbar-items {
@@ -300,6 +301,20 @@ p a {
 	background-repeat: no-repeat;
 }
 
+#email-invalid {
+	display: none;
+	color: red;
+}
+
+#thankyou_message {
+	display: none;
+	z-index: 10;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	font-style: bold;
+}
+
 #comment{
 	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
 	background-size: 30px 30px;
@@ -374,14 +389,50 @@ input:focus, textarea:focus {
 }
 
 .project-item {
-	width: 900px;
+	width: 350px;
 	text-align:center;
 	color: #0493bd;
 	font-size: 24px;
 	margin: auto;
+	cursor: pointer;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
-.project-item p {
-	color: black;
+.modal-box p {
+	color: white;
 	font-size: 18px;
+}
+.modal-container {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+	left: 0;
+	top: 0;
+}
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.modal-box {
+	width: 500px;
+	height: 260px;
+	border-radius: 20px;
+	padding: 20px;
+	text-align: center;
+	border-color: white;
+	border-style: double;
+	border-width: thick;
+	background-color: #5485BB;
+	position: absolute;
+	left: calc(50% - 280px);
+	top: calc(50% - 130px);
+	z-index: 100;
+}
+.no-scroll {
+	overflow: hidden;
 }

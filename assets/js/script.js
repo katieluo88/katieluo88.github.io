@@ -48,12 +48,32 @@ $(document).ready(function() {
         $(id).addClass('navbar-colored');
       };
   };
+
   var menuOff = function(id) {
     setTimeout(function(){
       if ( $(id).hasClass('navbar-colored')) {
           $(id).removeClass('navbar-colored');
       };
     }, 100);
+  };
+
+  var toggleModule = function(id) {
+    console.log(".project-item.proj"+id);
+    $(".project-item.proj" + id).click(function() {
+      console.log(".project-item.proj"+id);
+      $(".modal-container.proj"+id).css("display","block");
+      $(".modal-container.proj"+id).show();
+      $('body').addClass('no-scroll');
+    });
+    $(".modal-container.proj"+id).click(function() {
+      console.log("moduleoverlay clicked");
+      $(".modal-container.proj"+id).hide();
+      $('body').removeClass('no-scroll');
+    });
+  };
+
+  for (var i = 1; i <= 4; i++) {
+    toggleModule(i);
   };
 
 });
