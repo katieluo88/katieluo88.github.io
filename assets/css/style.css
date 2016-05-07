@@ -10,6 +10,10 @@ body, html {
 	font-family: 'Raleway', sans-serif;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 a {
 	text-decoration: none;
 	color: black;
@@ -78,6 +82,7 @@ a {
 	top: 300px;
 	padding: 20px;
 	height: 100%;
+	width: 1000px;
 }
 
 .picture {
@@ -157,15 +162,11 @@ p a {
 }
 
 #footer {
-	top: calc(100% + 100px);
 	background-color: #0d0d0d;
 	width: 100%;
 	height: 100px;
-	bottom: 0;
-	margin-bottom: 0;
-	padding-bottom: 0;
+	bottom: 0;;
 	position: absolute;
-	margin-top: 100px;
 }
 .footer-caption {
     float: left;
@@ -395,8 +396,10 @@ input:focus, textarea:focus {
 	font-size: 24px;
 	margin: auto;
 	cursor: pointer;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin: 30px;
+	border-style: solid;
+	height: 300px;
+	width: 300px;
 }
 
 .modal-box p {
@@ -419,6 +422,9 @@ input:focus, textarea:focus {
   position: relative;
 }
 .modal-box {
+	text-align:center;
+	color: white;
+	font-size: 24px;
 	width: 500px;
 	height: 260px;
 	border-radius: 20px;
@@ -435,4 +441,10 @@ input:focus, textarea:focus {
 }
 .no-scroll {
 	overflow: hidden;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        background-color: lightblue;
+    }
 }

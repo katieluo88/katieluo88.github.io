@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  $("#footer").css('top', $(document).height() + 100);
   $(window).scroll(function() {
 		if ($(window).scrollTop() > 100) {
         console.log("I scrolled");
