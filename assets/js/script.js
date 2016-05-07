@@ -61,14 +61,14 @@ $(document).ready(function() {
     console.log(".project-item.proj"+id);
     $(".project-item.proj" + id).click(function() {
       console.log(".project-item.proj"+id);
-      $(".modal-container.proj"+id).css("display","block");
+      $(".modal-container.proj"+id).fadeIn("slow");
       $(".modal-container.proj"+id).show();
-      $('body').addClass('no-scroll');
+      //$('body').addClass('no-scroll');
     });
     $(".modal-container.proj"+id).click(function() {
       console.log("moduleoverlay clicked");
-      $(".modal-container.proj"+id).hide();
-      $('body').removeClass('no-scroll');
+      $(".modal-container.proj"+id).fadeOut("slow");
+      //$('body').removeClass('no-scroll');
     });
   };
 
