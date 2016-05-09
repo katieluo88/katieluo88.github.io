@@ -378,7 +378,7 @@ input:focus, textarea:focus {
   background-color:white;
 }
 
-@media only screen and (max-width: 580px) {
+/*@media only screen and (max-width: 580px) {
 	#form-div{
 		left: 3%;
 		margin-right: 3%;
@@ -387,7 +387,7 @@ input:focus, textarea:focus {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
-}
+}*/
 
 .project-item {
 	width: 350px;
@@ -396,10 +396,16 @@ input:focus, textarea:focus {
 	font-size: 24px;
 	margin: auto;
 	cursor: pointer;
-	margin: 30px;
+	margin: 10px;
 	border-style: solid;
 	height: 300px;
 	width: 300px;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+}
+
+.project-item:hover {
+	opacity: 0.5;
 }
 
 .modal-box p {
@@ -444,7 +450,29 @@ input:focus, textarea:focus {
 }
 
 @media only screen and (max-width: 1100px) {
-    body {
-        background-color: lightblue;
-    }
+	#footer {
+		height: 190px;
+	}
+
+	.footer-wrapper {
+		text-align: center;
+	}
+
+	.footer-block {
+    line-height: 170%;
+    color: white;
+    padding-top: 30px;
+    width: 290px;
+    margin: auto;
+		float: none;
+	}
+
+	#form-div{
+		left: 10%;
+		margin-right: 3%;
+		width: 50%;
+		margin-left: 5%;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
 }
