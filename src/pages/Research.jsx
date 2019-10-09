@@ -5,7 +5,11 @@ import { Grid, Typography } from "@material-ui/core";
 import config from "../../config/config.json";
 import Markdown from "../components/Markdown";
 
-const researchContext = require.context("../../config/research", false, /\.md$/);
+const researchContext = require.context(
+  "../../config/research",
+  false,
+  /\.md$/
+);
 const research = researchContext.keys().reduce((arr, name) => {
   const content = researchContext(name);
   if (name.startsWith("./")) {
@@ -55,12 +59,12 @@ export default function Research() {
         <Grid container spacing={4}>
           {/* Image */}
           <Grid item xs={12} md={6} lg={6} className={classes.imageGrid}>
-          {config.pages.Research.hasOwnProperty(r.name) ? (
-            <img
-              className={classes.image}
-              src={config.pages.Research[r.name]}
-            />
-          ) : null}
+            {config.pages.Research.hasOwnProperty(r.name) ? (
+              <img
+                className={classes.image}
+                src={config.pages.Research[r.name]}
+              />
+            ) : null}
           </Grid>
           {/* Content */}
           <Grid item xs={12} md={6} lg={6}>
