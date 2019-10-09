@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import config from "../../config/config.json";
 
 const useStyles = makeStyles(theme => ({
-  pdf: {
+  frame: {
     width: "100%",
     height: "100vh"
   }
@@ -13,5 +13,5 @@ const useStyles = makeStyles(theme => ({
 export default function About() {
   const classes = useStyles();
 
-  return <iframe className={classes.pdf} src={config.pages.CV.pdf} />;
+  return <iframe className={classes.frame} src={config.pages.CV.url} />;
 }
