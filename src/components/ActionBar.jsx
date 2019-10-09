@@ -9,7 +9,7 @@ import {
 } from "@material-ui/icons";
 
 import { ThemeContext } from "../Contexts";
-import config from "../config/config.json";
+import config from "../../config/config.json";
 
 export default function ActionBar(props) {
   const [theme, toggleTheme] = React.useContext(ThemeContext);

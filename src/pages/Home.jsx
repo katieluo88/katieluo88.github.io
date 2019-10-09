@@ -2,10 +2,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 
-import config from "../config/config.json";
+import config from "../../config/config.json";
 
 import Markdown from "../components/Markdown";
-import intro from "../config/intro.md";
+import intro from "../../config/intro.md";
 
 const useStyles = makeStyles(theme => ({
   portraitGrid: {

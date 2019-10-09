@@ -8,7 +8,7 @@ import Home from "../pages/Home";
 import Research from "../pages/Research";
 import About from "../pages/About";
 
-import config from "../config/config.json";
+import config from "../../config/config.json";
 import { MainDisplayContext } from "../Contexts";
 
 const useStyles = makeStyles(theme => ({

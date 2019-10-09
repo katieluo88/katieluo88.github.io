@@ -2,10 +2,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Typography } from "@material-ui/core";
 
-import config from "../config/config.json";
+import config from "../../config/config.json";
 import Markdown from "../components/Markdown";
 
-const researchContext = require.context("../config/research", false, /\.md$/);
+const researchContext = require.context("../../config/research", false, /\.md$/);
 const research = researchContext.keys().reduce((arr, name) => {
   const content = researchContext(name);
   if (name.startsWith("./")) {

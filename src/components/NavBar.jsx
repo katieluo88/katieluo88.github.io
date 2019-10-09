@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import { AppBar, Button, Grid, Toolbar } from "@material-ui/core";
 
-import config from "../config/config.json";
+import config from "../../config/config.json";
 import ActionBar from "./ActionBar";
 
 const useStyles = makeStyles(theme => ({

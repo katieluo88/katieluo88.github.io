@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-import config from "../config/config.json";
+import config from "../../config/config.json";
 
 const useStyles = makeStyles(theme => ({
   pdf: {

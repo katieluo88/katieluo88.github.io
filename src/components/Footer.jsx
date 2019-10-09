@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import { Grid, Button, Typography } from "@material-ui/core";
 
-import config from "../config/config.json";
+import config from "../../config/config.json";
 
 const useStyles = makeStyles(theme => ({
   footer: {
