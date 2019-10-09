@@ -25,7 +25,7 @@ export default function ActionBar(props) {
             props.onClick(page);
           }}
         >
-          {page.charAt(0).toUpperCase() + page.slice(1)}
+          {page}
         </Button>
       );
     }

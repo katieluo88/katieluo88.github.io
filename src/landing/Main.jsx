@@ -31,12 +31,12 @@ export default function Main() {
   const classes = useStyles();
 
   const display = (() => {
-    switch (mainDisplay.toLowerCase()) {
-      case "home":
+    switch (mainDisplay) {
+      case "Home":
         return <Home />;
-      case "research":
+      case "Research":
         return <Research />;
-      case "about":
+      case "CV":
         return <About />;
       default:
         return <Home />;

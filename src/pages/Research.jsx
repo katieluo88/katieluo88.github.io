@@ -55,10 +55,10 @@ export default function Research() {
         <Grid container spacing={4}>
           {/* Image */}
           <Grid item xs={12} md={6} lg={6} className={classes.imageGrid}>
-          {config.pages.research.hasOwnProperty(r.name) ? (
+          {config.pages.Research.hasOwnProperty(r.name) ? (
             <img
               className={classes.image}
-              src={config.pages.research[r.name]}
+              src={config.pages.Research[r.name]}
             />
           ) : null}
           </Grid>

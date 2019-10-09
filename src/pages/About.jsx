@@ -13,5 +13,5 @@ const useStyles = makeStyles(theme => ({
 export default function About() {
   const classes = useStyles();
 
-  return <iframe className={classes.pdf} src={config.pages.about.pdf} />;
+  return <iframe className={classes.pdf} src={config.pages.CV.pdf} />;
 }

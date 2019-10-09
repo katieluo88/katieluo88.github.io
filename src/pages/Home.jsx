@@ -35,7 +35,7 @@ export default function HelloWorld() {
     <Grid container spacing={4}>
       {/* Portrait */}
       <Grid item xs={12} md={4} lg={4} className={classes.portraitGrid}>
-        <img className={classes.portrait} src={config.pages.home.portrait} />
+        <img className={classes.portrait} src={config.pages.Home.portrait} />
       </Grid>
       {/* Introduction */}
       <Grid item xs={12} md={8} lg={8}>
