@@ -1,0 +1,38 @@
+{
+  "header": {
+    "title": "http://katieluo88.github.io/assets/img/titleName.png"
+  },
+  "pages": {
+    "_comment": "Adding a field with a value object here will create a new tab",
+    "_comment\\": "Page redirection is controlled under src/landing/Main.jsx",
+    "home": {
+      "portrait": "http://katieluo88.github.io/assets/img/coverpic.png"
+    },
+    "research": {
+      "_comment": "Add field names corresponding to <.md> file names to correspond the images",
+
+      "meow": "https://scontent-den4-1.xx.fbcdn.net/v/t1.15752-9/71723660_704619206671094_8007123928117936128_n.png?_nc_cat=102&_nc_oc=AQnPBdu3doxByCtojnZO8jDQoTK_Us5DgJlITCIcELnZ6PDsFikAzxkOqCZtMqVlTmI&_nc_ht=scontent-den4-1.xx&oh=89896a560a9fcee3bab1f83883b15b88&oe=5DF04DF2"
+    },
+    "about": {
+      "pdf": "https://dibyaghosh.com/cv_onepage.pdf"
+    }
+  },
+  "footer": {
+    "caption": "Connect with me!",
+    "subtitle": "Katie Luo © 2019",
+    "connectOptions": [
+      {
+        "href": "mailto:katieluo@berkeley.edu",
+        "icon": "http://katieluo88.github.io/assets/img/mailIcon.png"
+      },
+      {
+        "href": "https://github.com/katieluo88",
+        "icon": "http://katieluo88.github.io/assets/img/gitIcon.png"
+      },
+      {
+        "href": "https://www.linkedin.com/in/katieluo",
+        "icon": "http://katieluo88.github.io/assets/img/linkIcon.png"
+      }
+    ]
+  }
+}
