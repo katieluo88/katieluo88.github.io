@@ -1,9 +1,8 @@
 Hello there, I'm Katie!
 
-Engineer, Dreamer, Nerd.
+I am an AI Research Resident at <a href="https://www.uber.com/ca/en/atg/" target="_blank">Uber ATG</a> working under professor Raquel Urtasun. My current research focuses on developing deep learning models for self driving technology. 
 
-A first year electrical engineer and computer scientist born and raised in the Silicon Valley. I know six languages; of those, four are used to communicate with computers. A pop-music enthusiast and avid chicken lover (I have two as pets!), I believe that web design should also be an expression of myself.
+In the past I worked with the <a href="http://rail.eecs.berkeley.edu/" target="_blank">Robotic AI and Learning lab</a> in UC Berkeley, where I had the fortune to be adviced by professor Sergey Levine in deep reinforcement learning. 
+I received my Bachelors and Masters of Science degrees at <a href="https://eecs.berkeley.edu/" target="_blank">UC Berkeley</a>, majoring in Electrical Engineering and Computer Sciences.
 
-I appreciate art, but my passion lies in science, technology, and mathematics. I particularly love the elegance of math and physics; formulas and equations developed by people long passed are very universal.
-
-I currently study in University of California, Berkeley, exposed to the cutting edge technology constantly introduced. At the forefront of technology, computer science has amazing potential, and I love the opportunities that it promises.
+View my professional summary <a href="https://drive.google.com/file/d/1OJjdsypIjpYVfve5hHNwkTjxdK5jeaAq/preview" target="_blank">here</a>.

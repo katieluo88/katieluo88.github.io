@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
   introduction: {
     margin: "50px 50px auto 50px",
     [theme.breakpoints.up("md")]: {
-      margin: "50px 100px auto auto"
+      margin: "100px 100px auto auto"
     }
   },
   intro: {
