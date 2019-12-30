@@ -73753,7 +73753,7 @@ function NavBar(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     color: "inherit",
     onClick: () => {
-      props.onClick("home");
+      props.onClick("Home");
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: classes.title,

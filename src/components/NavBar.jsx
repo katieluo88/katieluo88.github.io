@@ -47,7 +47,7 @@ export default function NavBar(props) {
             <Button
               color="inherit"
               onClick={() => {
-                props.onClick("home");
+                props.onClick("Home");
               }}
             >
               <img className={classes.title} src={config.header.title} />
