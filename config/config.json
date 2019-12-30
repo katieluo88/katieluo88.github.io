@@ -2,20 +2,34 @@
   "header": {
     "title": "http://katieluo88.github.io/assets/img/titleName.png"
   },
-  "pages": {
+  "tabs": {
     "//1": "Adding a field with a value object here will create a new tab",
     "//2": "Page redirection is controlled under src/landing/Main.jsx",
     "Home": {
       "portrait": "http://katieluo88.github.io/assets/img/coverpic.png"
     },
-    "Research": {
-      "//1": "Add field names corresponding to <.md> file names to attach the images",
-      "meow": "https://scontent-den4-1.xx.fbcdn.net/v/t1.15752-9/71723660_704619206671094_8007123928117936128_n.png?_nc_cat=102&_nc_oc=AQnPBdu3doxByCtojnZO8jDQoTK_Us5DgJlITCIcELnZ6PDsFikAzxkOqCZtMqVlTmI&_nc_ht=scontent-den4-1.xx&oh=89896a560a9fcee3bab1f83883b15b88&oe=5DF04DF2",
-      "arf": "https://cdn.glitch.com/970ba0f1-d62e-4459-aa35-a4a03d334b81%2Fa4013065-136a-4c4b-8487-4b6c0cf649a7.image.png?v=1571113370893"
-      
+    "Experience": {
+      "//1": "Adding fields will create new sections",
+      "Research": [
+        {
+          "content": "research/uberatg.md"
+        },
+        {
+          "content": "research/rail.md"
+        }        
+      ],
+      "Publications": [
+        {
+          "content": "publication/giirl.md"
+        },
+        {
+          "content": "publication/airl.md"
+        }
+        
+      ]
     },
     "CV": {
-      "url": "https://drive.google.com/file/d/1OJjdsypIjpYVfve5hHNwkTjxdK5jeaAq/preview"
+      "url": "https://drive.google.com/file/d/19x1rGufO_gFMErLyZaq7uwjSVGtXiqaU/preview?embedded=true"
     }
   },
   "footer": {

@@ -14,18 +14,19 @@ import config from "../../config/config.json";
 export default function ActionBar(props) {
   const [theme, toggleTheme] = React.useContext(ThemeContext);
 
-  const pages = [];
+  const tabs = [];
 
-  for (const page in config.pages) {
-    if (typeof config.pages[page] === "object") {
-      pages.push(
+  for (const tab in config.tabs) {
+    if (typeof config.tabs[tab] === "object") {
+      tabs.push(
         <Button
+          key={tab}
           className={props.className}
           onClick={() => {
-            props.onClick(page);
+            props.onClick(tab);
           }}
         >
-          {page}
+          {tab}
         </Button>
       );
     }
@@ -33,7 +34,7 @@ export default function ActionBar(props) {
 
   return (
     <React.Fragment>
-      {pages}
+      {tabs}
       <Button className={props.className} onClick={toggleTheme}>
         {theme.palette.type === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
       </Button>

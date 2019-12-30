@@ -4,7 +4,7 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   devtool: "cheap-module-source-map",
   plugins: [
     // new BundleAnalyzerPlugin()

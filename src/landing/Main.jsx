@@ -4,9 +4,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
-import Home from "../pages/Home";
-import Research from "../pages/Research";
-import About from "../pages/About";
+import Home from "../tabs/Home";
+import Experience from "../tabs/Experience";
+import About from "../tabs/About";
 
 import config from "../../config/config.json";
 import { MainDisplayContext } from "../Contexts";
@@ -34,8 +34,8 @@ export default function Main() {
     switch (mainDisplay) {
       case "Home":
         return <Home />;
-      case "Research":
-        return <Research />;
+      case "Experience":
+        return <Experience />;
       case "CV":
         return <About />;
       default:
