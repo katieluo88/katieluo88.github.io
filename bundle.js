@@ -73380,7 +73380,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("Hello there, I'm Katie!\n\nI am an AI Research Resident at <a href=\"https://www.uber.com/ca/en/atg/\" target=\"_blank\">Uber ATG</a> working under professor Raquel Urtasun. My current research focuses on developing deep learning models for self driving technology. \n\nIn the past I worked with the <a href=\"http://rail.eecs.berkeley.edu/\" target=\"_blank\">Robotic AI and Learning lab</a> in UC Berkeley, where I had the fortune to be adviced by professor Sergey Levine in deep reinforcement learning. \nI received my Bachelors and Masters of Science degrees at <a href=\"https://eecs.berkeley.edu/\" target=\"_blank\">UC Berkeley</a>, majoring in Electrical Engineering and Computer Sciences.\n\nView my professional summary <a href=\"https://drive.google.com/file/d/1OJjdsypIjpYVfve5hHNwkTjxdK5jeaAq/preview\" target=\"_blank\">here</a>.");
+/* harmony default export */ __webpack_exports__["default"] = ("Hello there, I'm Katie!\n\nI am an AI Research Resident at <a href=\"https://www.uber.com/ca/en/atg/\" target=\"_blank\">Uber ATG</a> working under professor Raquel Urtasun. My current research focuses on developing deep learning models for self driving technology. \n\nIn the past I worked with the <a href=\"http://rail.eecs.berkeley.edu/\" target=\"_blank\">Robotic AI and Learning lab</a> in UC Berkeley, where I had the fortune to be adviced by professor Sergey Levine in deep reinforcement learning. \nI received my Bachelors and Masters of Science degrees at <a href=\"https://eecs.berkeley.edu/\" target=\"_blank\">UC Berkeley</a>, majoring in Electrical Engineering and Computer Sciences.\n\nView my professional summary <a href=\"https://drive.google.com/file/d/19x1rGufO_gFMErLyZaq7uwjSVGtXiqaU/preview\" target=\"_blank\">here</a>.\n");
 
 /***/ }),
 
@@ -73974,7 +73974,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["
   imageGrid: {
     textAlign: "center",
     [theme.breakpoints.up("md")]: {
-      textAlign: "right"
+      textAlign: "center"
     }
   },
   image: {
@@ -74002,8 +74002,8 @@ function Experience() {
   }, c.image != null ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
     xs: 12,
-    md: 5,
-    lg: 5,
+    md: 4,
+    lg: 4,
     className: classes.imageGrid
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: classes.image,
