@@ -5,7 +5,6 @@
 
 // init project
 const express = require('express');
-const redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
 const bodyParser = require("body-parser");
 
 const http = require('http');
@@ -23,13 +22,10 @@ function startServer() {
   const app = express();
   const logger = log4js.getLogger("server");
 
-  // Redirect HTTP to HTTPS,
-  app.use(redirectToHTTPS([/localhost:(\d{4})/], [], 301));
-  
   // Enable router to parse json and url-encoded payloads
   app.use(bodyParser.json({limit: "2mb"}));
 	app.use(bodyParser.urlencoded({limit: "2mb", extended: false}));
-  
+
   // Logging for each received request
   app.use((req, res, next) => {
     const path = `"${req.method} ${req.path}"`;
@@ -39,25 +35,25 @@ function startServer() {
     log4js.getLogger("receive").info(log);
     next();
   });
-  
+
   // Logging for each returned request
   app.use(log4js.connectLogger(log4js.getLogger("return"), {level: 'info'}));
-  
+
   // Handle requests for static files
   app.use(express.static('public'));
-  
+
   // Redirect if nothing else sent a response
   app.get('*', (req, res) => {
     res.redirect('/');
   });
-  
+
   const server = http.createServer(app);
-  
+
   // Start the server
   server.listen(process.env.PORT, () => {
     logger.info('Your app is listening on port ' + server.address().port);
   });
-  
+
   return server;
 }
 
