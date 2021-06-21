@@ -1,3 +1,5 @@
+> Update: This page is moving! Please go to my Cornell University personal website, [www.cs.cornell.edu/~katieluo/](https://www.cs.cornell.edu/~katieluo/).
+
 Hello there, I'm Katie!
 
 I am an AI Research Resident at <a href="https://www.uber.com/ca/en/atg/" target="_blank">Uber ATG</a> working under professor Raquel Urtasun. My current research focuses on developing deep learning models for self driving technology. 
