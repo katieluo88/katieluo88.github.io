@@ -1,33 +1,225 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Katie Luo</title>
-    <meta name="description" content="Personal website" />
-
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-  </head>
-  <body>
-    <div id="main">
-    </div>
-
-    <script type="text/javascript" src="/bundle.js"></script>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Redirecting to www.cs.cornell.edu/~katieluo/</title>
-<meta http-equiv="refresh" content="3; URL=https://www.cs.cornell.edu/~katieluo/">
-<link rel="canonical" href="https://www.cs.cornell.edu/~katieluo/">
-</head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Katie Luo</title>
+<meta name="author" content="Katie Luo" />
+<meta name="description" content="Katie Luo — researcher in machine learning and computer vision: 3D perception, multimodal learning, and autonomous driving." />
 
-<body style="text-align: center">
-My site has moved! Redirecting to <a href="https://www.cs.cornell.edu/~katieluo/">www.cs.cornell.edu/~katieluo/</a>
+<!-- favicon (pink K) -->
+<link rel="icon" type="image/png" href="assets/icon.png" />
+<link rel="apple-touch-icon" href="assets/icon.png" />
+
+<!-- fonts: same set as current site (Lora + Cutive Mono) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<!-- icons: envelope / twitter / scholar / linkedin / github -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============================= NAV ============================= -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><span class="logo-k">K</span><span>Katie Luo</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#talks">Talks</a>
+      <a href="https://drive.google.com/file/d/1ZFwB3uHTGDNAlr4rYXslsjKszEqAZl1s/view?usp=sharing" id="cv-link" target="_blank" rel="noopener">CV</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================= ABOUT ============================= -->
+<section id="about" class="anchor" style="border-top:none;padding-top:56px;"><a id="top"></a>
+  <div class="container about-grid">
+
+    <!-- left: profile card -->
+    <aside class="profile">
+      <img class="avatar" src="assets/avatar.jpg" alt="Katie Luo" />
+      <h1>Katie Luo</h1>
+      <p class="role"><a href="https://stanfordasl.github.io/" target="_blank" rel="noopener">Postdoctoral Researcher @ Stanford</a></p>
+      <p class="role"><a href="https://www.cornell.edu/" target="_blank" rel="noopener">Ph.D. @ Cornell University</a></p>
+      <div class="socials">
+        <a href="mailto:kzl6@cornell.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://scholar.google.com/citations?user=qlmK27YAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://twitter.com/katielulula" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/katieluo" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </aside>
+
+    <!-- right: bio + interests + edu + news -->
+    <div>
+      <p class="section-eyebrow">About</p>
+      <div class="lead">
+        <p>I am a Postdoctoral Researcher in the <a href="https://stanfordasl.github.io/" target="_blank" rel="noopener">Autonomous Systems Lab</a> at Stanford University, working with Prof. Marco Pavone. I completed my Ph.D. at Cornell University, advised by Prof. Kilian Q. Weinberger and Prof. Bharath Hariharan.</p>
+        <p>My research centers on the visual understanding of the world — 3D perception and multimodal learning — combining visual data with other sensory inputs to build a richer, more robust understanding of the environment. Increasingly, I focus on multimodal foundation models that unify perception, reasoning, and action — extending the same principle of learning from rich, weakly-labeled signals from 3D scenes to language-grounded embodied reasoning.</p>
+        <p>I have been fortunate to be supported by a Cornell University Fellowship, an NVIDIA Graduate Fellowship, and an AAUW American Dissertation Fellowship. Before Cornell, I worked across applied machine learning, deep reinforcement learning, and natural language processing.</p>
+      </div>
+
+      <div class="edu">
+        <p class="section-eyebrow">Education</p>
+        <ul>
+          <li><p class="course">Ph.D. in Computer Science · 2020–2025</p><p class="inst">Cornell University</p></li>
+          <li><p class="course">M.S. in EECS · 2018–2019</p><p class="inst">University of California, Berkeley</p></li>
+          <li><p class="course">B.S. in EECS · 2015–2018</p><p class="inst">University of California, Berkeley</p></li>
+        </ul>
+      </div>
+
+      <div class="interests areas">
+        <p class="section-eyebrow">Research Areas <span class="areas-hint">— jump to publications</span></p>
+        <ul class="chips chips-nav" id="research-areas"><!-- filled by render.js --></ul>
+      </div>
+
+      <div class="news">
+        <p class="section-eyebrow">News</p>
+        <!-- EDIT: keep this list fresh -->
+        <div class="news-item"><div class="news-date">Jun 2025</div><div class="news-body">Gave a talk at the <a href="https://drivex-workshop.github.io/" target="_blank" rel="noopener">DriveX Workshop</a> at CVPR 2025 on cooperative &amp; augmented perception.</div></div>
+        <div class="news-item"><div class="news-date">2025</div><div class="news-body"><a href="#publications">Mixed Signals</a>, our heterogeneous LiDAR V2X dataset, was accepted to ICCV 2025.</div></div>
+        <div class="news-item"><div class="news-date">Oct 2024</div><div class="news-body">Presented <a href="https://jiawei-yang.github.io/DenoisingViT/" target="_blank" rel="noopener">Denoising Vision Transformers</a> (Oral) at ECCV 2024 in Milan, Italy.</div></div>
+        <div class="news-item"><div class="news-date">May 2024</div><div class="news-body">Received the AAUW American Dissertation Fellowship — notable alumnae include Marie Curie and Keisha Blain.</div></div>
+        <div class="news-item"><div class="news-date">Apr 2024</div><div class="news-body">Research exchange at the University of Sydney, Australian Centre for Robotics.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PUBLICATIONS ============================= -->
+<section id="publications" class="soft">
+  <div class="container">
+    <p class="section-eyebrow">Research Output</p>
+    <h2 class="section-title">Publications</h2>
+    <p class="pub-note">Grouped by theme · <span style="font-style:italic">*</span> denotes equal contribution. For an always-current list, see my
+      <a href="https://scholar.google.com/citations?user=qlmK27YAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+    <div id="pub-list"></div>
+  </div>
+</section>
+
+<!-- ============================= RESEARCH (academic labs) ============================= -->
+<section id="research">
+  <div class="container">
+    <p class="section-eyebrow">Research</p>
+    <h2 class="section-title">Academic Labs</h2>
+    <p class="section-sub">Where I have done my research.</p>
+    <div class="timeline">
+      <div class="tl-item">
+        <p class="tl-date">Aug 2024 — Present</p>
+        <p class="tl-role">Postdoctoral Researcher</p>
+        <p class="tl-org">Autonomous Systems Lab (ASL), Stanford University — advised by Prof. Marco Pavone</p>
+        <p class="tl-loc">Palo Alto, USA</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">2020 — May 2025</p>
+        <p class="tl-role">Graduate Student Researcher</p>
+        <p class="tl-org">Machine Learning, Cornell University — advised by Prof. Kilian Q. Weinberger &amp; Prof. Bharath Hariharan</p>
+        <p class="tl-loc">Ithaca, USA</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">Mar 2024 — May 2024</p>
+        <p class="tl-role">Visiting Student Researcher</p>
+        <p class="tl-org">Australian Centre for Robotics — advised by Dr. Stephany Berrio Perez &amp; Dr. Stewart Worrall</p>
+        <p class="tl-loc">Sydney, Australia</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">Jun 2022 — Aug 2022</p>
+        <p class="tl-role">Visiting Student Researcher</p>
+        <p class="tl-org">Pioneer Center for AI — advised by Prof. Serge Belongie</p>
+        <p class="tl-loc">Copenhagen, Denmark</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">2017 — 2019</p>
+        <p class="tl-role">Student Researcher</p>
+        <p class="tl-org">Robotic &amp; AI Learning Lab (RAIL), UC Berkeley — advised by Prof. Sergey Levine</p>
+        <p class="tl-loc">Berkeley, USA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= EXPERIENCE (industry & exchanges) ============================= -->
+<section id="experience" class="soft">
+  <div class="container">
+    <p class="section-eyebrow">Industry</p>
+    <h2 class="section-title">Industry Experience</h2>
+    <p class="section-sub">Selected industry internships and roles.</p>
+    <div class="timeline">
+      <div class="tl-item">
+        <p class="tl-date">Jun 2024 — Oct 2024</p>
+        <p class="tl-role">PhD Research Intern</p>
+        <p class="tl-org">Waymo — Perception Research</p>
+        <p class="tl-loc">Mountain View, USA</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">Jun 2023 — Dec 2023</p>
+        <p class="tl-role">Research Intern</p>
+        <p class="tl-org">NVIDIA — Autonomous Vehicle Research</p>
+        <p class="tl-loc">Santa Clara, USA</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">May 2021 — Sep 2021</p>
+        <p class="tl-role">Research Intern</p>
+        <p class="tl-org">Facebook AI</p>
+        <p class="tl-loc">New York, USA</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">Jun 2019 — Jun 2020</p>
+        <p class="tl-role">AI Resident</p>
+        <p class="tl-org">Uber ATG (acquired by Aurora) — advised by Prof. Raquel Urtasun</p>
+        <p class="tl-loc">Toronto, Canada</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">May 2018 — Aug 2018</p>
+        <p class="tl-role">ML Engineering Intern</p>
+        <p class="tl-org">Google — YouTube</p>
+        <p class="tl-loc">Mountain View, USA</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">May 2017 — Aug 2017</p>
+        <p class="tl-role">Data Science Intern</p>
+        <p class="tl-org">Wish (Context Logic)</p>
+        <p class="tl-loc">San Francisco, USA</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">May 2016 — Aug 2016</p>
+        <p class="tl-role">Software Engineering Intern</p>
+        <p class="tl-org">IBM</p>
+        <p class="tl-loc">San Jose, USA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= TALKS ============================= -->
+<section id="talks">
+  <div class="container">
+    <p class="section-eyebrow">Selected Talks</p>
+    <h2 class="section-title">Talks</h2>
+    <p class="section-sub">Invited talks and seminars.</p>
+    <div id="talk-list">
+      <div class="talk"><p class="talk-title"><a href="https://webedit.cs.cornell.edu/content/cs-phd-students-colloquium" target="_blank" rel="noopener">Leveraging Auxiliary Information for Self-Driving Perception across Diverse End Users</a></p><p class="talk-meta"><span class="date">Dec 2024</span> · CS Ph.D. Students Colloquium, Cornell University</p></div>
+      <div class="talk"><p class="talk-title"><a href="https://robotics.sydney.edu.au/seminar-unsupervised-objects-discovery-from-lidar-scans-for-autonomous-driving-2nd-may-100pm/" target="_blank" rel="noopener">Unsupervised Object Discovery from LiDAR Scans for Autonomous Driving</a></p><p class="talk-meta"><span class="date">May 2024</span> · Robotics Research Seminar, Australian Centre for Robotics</p></div>
+      <div class="talk"><p class="talk-title"><a href="https://www.nvidia.com/gtc/session-catalog/?search=S61185" target="_blank" rel="noopener">Leveraging Auxiliary Information for Self-Driving Perception</a></p><p class="talk-meta"><span class="date">Mar 2024</span> · Graduate Fellow Fast Forward Talks, NVIDIA GTC 2024</p></div>
+      <div class="talk"><p class="talk-title"><a href="https://www.aicentre.dk/the-centre-p1" target="_blank" rel="noopener">The Under-Utilized Information in Repeated Traversals for Autonomous Vehicles</a></p><p class="talk-meta"><span class="date">Jun 2022</span> · P1 Café, Pioneer Center for AI, Copenhagen</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    © <span id="year"></span> Katie Luo · Built from scratch, no CMS ·
+    <a href="https://scholar.google.com/citations?user=qlmK27YAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+  </div>
+</footer>
+
+<script src="js/pubs.js"></script>
+<script src="js/render.js"></script>
 </body>
+</html>
