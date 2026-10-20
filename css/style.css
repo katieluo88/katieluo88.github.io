@@ -96,7 +96,7 @@ section:first-of-type { border-top: none; }
 .about-grid { display: grid; grid-template-columns: 250px 1fr; gap: 48px; align-items: start; }
 .profile { text-align: center; position: sticky; top: 90px; }
 .avatar {
-  width: 200px; height: 200px; border-radius: 50%;
+  width: 200px; height: auto; aspect-ratio: 2 / 2.5; border-radius: 50%;
   object-fit: cover; border: 4px solid #fff;
   box-shadow: 0 6px 26px rgba(0,0,0,.10);
 }
@@ -108,6 +108,11 @@ section:first-of-type { border-top: none; }
 .socials { display: flex; justify-content: center; gap: 16px; margin-top: 16px; }
 .socials a { color: var(--muted); font-size: 20px; }
 .socials a:hover { color: var(--accent-deep); }
+
+.affiliations { margin-top: 22px; }
+.affiliation-logos { display: flex; align-items: center; gap: 28px; margin-top: 10px; }
+.affiliation-logos img { height: 44px; width: auto; display: block; opacity: .9; transition: opacity .15s; }
+.affiliation-logos a:hover img { opacity: 1; }
 
 .lead { font-size: 18px; }
 .lead p { margin: 0 0 16px; }

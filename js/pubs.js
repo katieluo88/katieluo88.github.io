@@ -16,6 +16,9 @@
      links    { pdf, code, project, dataset, video }  (omit unused)
    ============================================================ */
 
+// TODO (in progress): these themes will be replaced with new categories once the
+// "My research centers on..." paragraph in index.html is rewritten to match my
+// research statement thesis. Then re-assign each paper's `topic` below.
 // Display order of publication themes. Reorder freely — the page follows.
 // `label` is the full accordion heading; `short` is the intro nav chip.
 const TOPICS = [
